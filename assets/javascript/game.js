@@ -27,7 +27,7 @@ wins = document.getElementById("wins");
 losses = document.getElementById("losses");
 guessNumber = document.getElementById("guess-number");
 
-alert("Welcome to Premier League Soccer Hangman! Let's Go!")
+alert("Welcome to Premier League Soccer Hangman! Guess the club name. Let's Go!")
 
 //create the functions
 function newWord() {
@@ -43,13 +43,13 @@ function newWord() {
 
 function reset() {
     newWord();
-    guessNumber.innerHTML = 8;
+    guessNumber.innerHTML = 7;
     guessLetters = "";
 }
 
 
 window.onload = function() {
-    guessNumber.innerHTML = 8;
+    guessNumber.innerHTML = 7;
     wins.innerHTML = 0;
     losses.innerHTML = 0;
     newWord();
@@ -71,6 +71,7 @@ document.onkeyup = function(event) {
         }
         if (guessNumber.innerHTML == 0) {
             losses.innerHTML++;
+            alert("Better luck next time!");
             reset();
         }
     }
@@ -89,6 +90,7 @@ document.onkeyup = function(event) {
     document.getElementById("word").innerHTML = wordUnderscore;
     if (wordUnderscore === word) {
         wins.innerHTML++;
+        alert("Boom! Winner!");
         reset();
     }
 }

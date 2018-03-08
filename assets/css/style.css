@@ -1,11 +1,7 @@
 
 div {
-	background-image: url("assets/images/stadium.jpg");
+	background-image: url("stadium.jpg");
 	text-align: center;
-}
-
-body {
-	background-image: url("assets/images/stadium.jpg");
 }
 
 h1 {
@@ -27,6 +23,3 @@ h1 {
 	color: red;
 }
 
-.main {
-	background-image: url("assets/images/stadium.jpg");
-}

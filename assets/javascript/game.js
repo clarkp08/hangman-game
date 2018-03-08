@@ -27,8 +27,6 @@ wins = document.getElementById("wins");
 losses = document.getElementById("losses");
 guessNumber = document.getElementById("guess-number");
 
-alert("Welcome to Premier League Soccer Hangman! Guess the club name. Let's Go!")
-
 //create the functions
 function newWord() {
     word = words[Math.floor(Math.random() * words.length)];
@@ -94,4 +92,6 @@ document.onkeyup = function(event) {
         reset();
     }
 }
+
+alert("Welcome to Premier League Soccer Hangman! Guess the club name. Let's Go!")
 
